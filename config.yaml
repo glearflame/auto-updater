@@ -1,0 +1,141 @@
+# Configuração do Auto-Updater
+# Adicione aqui os repositórios e fontes que deseja monitorar
+
+repositories:
+  # --- Exemplos de repositórios GitHub Releases ---
+  - name: "despertador"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "despertador"
+    check_installed: true
+    flatpak_id: null
+    asset_name: "Despertador-x86_64.AppImage"
+
+  - name: "pentest-kit"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "pentest-kit"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  - name: "My-system-auto-analise-"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "My-system-auto-analise-"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  - name: "bot-de-vendas-"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "bot-de-vendas-"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  - name: "topdirs"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "topdirs"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  # --- Exemplos de pacotes Flatpak (Flathub) ---
+  - name: "org.gnome.Notes"
+    type: "flathub"
+    flatpak_id: "org.gnome.Notes"
+    check_installed: true
+
+  - name: "com.spotify.Client"
+    type: "flathub"
+    flatpak_id: "com.spotify.Client"
+    check_installed: true
+
+  - name: "org.mozilla.firefox"
+    type: "flathub"
+    flatpak_id: "org.mozilla.firefox"
+    check_installed: true
+
+  - name: "org.chromium.Chromium"
+    type: "flathub"
+    flatpak_id: "org.chromium.Chromium"
+    check_installed: true
+
+  - name: "com.valvesoftware.Steam"
+    type: "flathub"
+    flatpak_id: "com.valvesoftware.Steam"
+    check_installed: true
+
+  - name: "org.libreoffice.LibreOffice"
+    type: "flathub"
+    flatpak_id: "org.libreoffice.LibreOffice"
+    check_installed: true
+
+  - name: "org.videolan.VLC"
+    type: "flathub"
+    flatpak_id: "org.videolan.VLC"
+    check_installed: true
+
+  - name: "org.gimp.GIMP"
+    type: "flathub"
+    flatpak_id: "org.gimp.GIMP"
+    check_installed: true
+
+  - name: "org.inkscape.Inkscape"
+    type: "flathub"
+    flatpak_id: "org.inkscape.Inkscape"
+    check_installed: true
+
+  - name: "com.discordapp.Discord"
+    type: "flathub"
+    flatpak_id: "com.discordapp.Discord"
+    check_installed: true
+
+  - name: "com.slack.Slack"
+    type: "flathub"
+    flatpak_id: "com.slack.Slack"
+    check_installed: true
+
+  - name: "org.telegram.desktop"
+    type: "flathub"
+    flatpak_id: "org.telegram.desktop"
+    check_installed: true
+
+  - name: "com.valvesoftware.steam"
+    type: "flathub"
+    flatpak_id: "com.valvesoftware.steam"
+    check_installed: true
+
+  - name: "net.lutris.Lutris"
+    type: "flathub"
+    flatpak_id: "net.lutris.Lutris"
+    check_installed: true
+
+  - name: "org.winehq.Wine"
+    type: "flathub"
+    flatpak_id: "org.winehq.Wine"
+    check_installed: true
+
+# Configurações gerais
+settings:
+  # Repositório onde será feito o commit das atualizações
+  update_repo_owner: "glearflame"
+  update_repo_name: "auto-updater-releases"
+  
+  # Diretório onde os arquivos de versão serão salvos
+  versions_dir: "versions"
+  
+  # Diretório para logs
+  logs_dir: "logs"
+  
+  # Preparar post para Reddit automaticamente?
+  prepare_reddit_post: true
+  
+  # Fazer commit e push automaticamente?
+  auto_push: true
+  
+  # Criar tag no GitHub para cada versão nova?
+  create_github_tag: true
