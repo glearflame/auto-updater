@@ -1,6 +1,8 @@
 """Updater para pacotes AUR (Arch Linux)."""
 
 import subprocess
+import json
+import urllib.request
 from typing import Optional
 from .generic import BaseUpdater, UpdateInfo
 
