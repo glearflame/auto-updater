@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+versions/
+*.txt
+.reddit_post.md
+CHANGELOG.md
