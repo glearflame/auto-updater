@@ -2,7 +2,9 @@
 # Adicione aqui os repositórios e fontes que deseja monitorar
 
 repositories:
-  # --- Exemplos de repositórios GitHub Releases ---
+  # ==========================================
+  # GitHub Releases (código fonte)
+  # ==========================================
   - name: "despertador"
     type: "github_release"
     owner: "glearflame"
@@ -43,7 +45,33 @@ repositories:
     flatpak_id: null
     asset_name: null
 
-  # --- Exemplos de pacotes Flatpak (Flathub) ---
+  - name: "price-radar-br"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "PriceRadarBR"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  - name: "auto-updater"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "auto-updater"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  - name: "site-de-videos"
+    type: "github_release"
+    owner: "glearflame"
+    repo: "site-de-videos"
+    check_installed: false
+    flatpak_id: null
+    asset_name: null
+
+  # ==========================================
+  # Flatpak (Flathub)
+  # ==========================================
   - name: "org.gnome.Notes"
     type: "flathub"
     flatpak_id: "org.gnome.Notes"
@@ -104,11 +132,6 @@ repositories:
     flatpak_id: "org.telegram.desktop"
     check_installed: true
 
-  - name: "com.valvesoftware.steam"
-    type: "flathub"
-    flatpak_id: "com.valvesoftware.steam"
-    check_installed: true
-
   - name: "net.lutris.Lutris"
     type: "flathub"
     flatpak_id: "net.lutris.Lutris"
@@ -118,6 +141,98 @@ repositories:
     type: "flathub"
     flatpak_id: "org.winehq.Wine"
     check_installed: true
+
+  # ==========================================
+  # PyPI (Python packages)
+  # ==========================================
+  - name: "requests"
+    type: "pypi"
+    package_name: "requests"
+    check_installed: false
+
+  - name: "flask"
+    type: "pypi"
+    package_name: "flask"
+    check_installed: false
+
+  - name: "django"
+    type: "pypi"
+    package_name: "django"
+    check_installed: false
+
+  - name: "numpy"
+    type: "pypi"
+    package_name: "numpy"
+    check_installed: false
+
+  - name: "pandas"
+    type: "pypi"
+    package_name: "pandas"
+    check_installed: false
+
+  # ==========================================
+  # npm (Node.js packages)
+  # ==========================================
+  - name: "vue"
+    type: "npm"
+    package_name: "vue"
+    check_installed: false
+
+  - name: "react"
+    type: "npm"
+    package_name: "react"
+    check_installed: false
+
+  - name: "typescript"
+    type: "npm"
+    package_name: "typescript"
+    check_installed: false
+
+  - name: "eslint"
+    type: "npm"
+    package_name: "eslint"
+    check_installed: false
+
+  # ==========================================
+  # Docker Hub (container images)
+  # ==========================================
+  - name: "nginx"
+    type: "dockerhub"
+    repository: "library/nginx"
+    check_installed: false
+
+  - name: "postgres"
+    type: "dockerhub"
+    repository: "library/postgres"
+    check_installed: false
+
+  - name: "redis"
+    type: "dockerhub"
+    repository: "library/redis"
+    check_installed: false
+
+  - name: "ubuntu"
+    type: "dockerhub"
+    repository: "library/ubuntu"
+    check_installed: false
+
+  - name: "alpine"
+    type: "dockerhub"
+    repository: "library/alpine"
+    check_installed: false
+
+  # ==========================================
+  # AUR (Arch Linux User Repository)
+  # ==========================================
+  - name: "yay"
+    type: "arch"
+    package_name: "yay"
+    check_installed: false
+
+  - name: "google-chrome"
+    type: "arch"
+    package_name: "google-chrome"
+    check_installed: false
 
 # Configurações gerais
 settings:

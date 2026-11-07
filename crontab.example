@@ -1,0 +1,9 @@
+# Crontab para o Auto-Updater
+# Adicione ao seu crontab com: crontab crontab.example
+# Ou edite diretamente: crontab -e
+
+# Roda todo dia às 8:00
+0 8 * * * /home/spingat/projetos/auto-updater/run_daily.sh
+
+# Roda toda segunda-feira às 9:00 (apenas verificação, sem push)
+# 0 9 * * 1 /home/spingat/projetos/auto-updater/run_daily.sh --dry-run

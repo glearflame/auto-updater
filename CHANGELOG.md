@@ -1,79 +1,41 @@
-# Changelog - 2026-11-06 21:01
+# Changelog - Auto-Updater
 
-## org.gnome.Notes - 40.2
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.gnome.Notes
-- Notas: Atualização do org.gnome.Notes para versão 40.2
+## v1.0.0 (2026-10-30)
 
-## com.spotify.Client - 1.2.95.453.g0eeebbed
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/com.spotify.Client
-- Notas: Atualização do com.spotify.Client para versão 1.2.95.453.g0eeebbed
+### Novos recursos
+- Suporte a 5 fontes diferentes: GitHub Releases, Flathub, PyPI, npm, Docker Hub, AUR
+- Detecção automática de novas versões
+- Salvamento de versões locais em `versions/`
+- Geração automática de CHANGELOG.md
+- Commit e push automático no GitHub
+- Preparação de post para Reddit (`reddit_post.md`)
+- Suporte a múltiplos repositórios no `config.yaml`
 
-## org.mozilla.firefox - 159.0.1
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.mozilla.firefox
-- Notas: Atualização do org.mozilla.firefox para versão 159.0.1
+### Mudanças
+- Adicionado suporte a PyPI (pacotes Python)
+- Adicionado suporte a npm (pacotes Node.js)
+- Adicionado suporte a Docker Hub (imagens de container)
+- Adicionado suporte a AUR (Arch Linux User Repository)
+- Corrigido parsing de versão do Flatpak (suporte a múltiplos idiomas: PT, EN, etc.)
+- Adicionado script `run_daily.sh` para execução via cron
+- Adicionado exemplo de crontab
 
-## org.chromium.Chromium - 157.0.8103.38
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.chromium.Chromium
-- Notas: Atualização do org.chromium.Chromium para versão 157.0.8103.38
+### Repositórios monitorados (20 no total)
 
-## com.valvesoftware.Steam - 1.0.0.87
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/com.valvesoftware.Steam
-- Notas: Atualização do com.valvesoftware.Steam para versão 1.0.0.87
+**GitHub Releases (8):**
+- despertador, pentest-kit, My-system-auto-analise-, bot-de-vendas-, topdirs, price-radar-br, auto-updater, site-de-videos
 
-## org.libreoffice.LibreOffice - 26.8.2.2
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.libreoffice.LibreOffice
-- Notas: Atualização do org.libreoffice.LibreOffice para versão 26.8.2.2
+**Flatpak (15):**
+- org.gnome.Notes, com.spotify.Client, org.mozilla.firefox, org.chromium.Chromium, com.valvesoftware.Steam, org.libreoffice.LibreOffice, org.videolan.VLC, org.gimp.GIMP, org.inkscape.Inkscape, com.discordapp.Discord, com.slack.Slack, org.telegram.desktop, net.lutris.Lutris, org.winehq.Wine
 
-## org.videolan.VLC - 3.0.24
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.videolan.VLC
-- Notas: Atualização do org.videolan.VLC para versão 3.0.24
+**PyPI (4):**
+- requests, flask, django, numpy, pandas
 
-## org.gimp.GIMP - 3.2.8
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.gimp.GIMP
-- Notas: Atualização do org.gimp.GIMP para versão 3.2.8
+**npm (4):**
+- vue, react, typescript, eslint
 
-## org.inkscape.Inkscape - 1.4.4
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.inkscape.Inkscape
-- Notas: Atualização do org.inkscape.Inkscape para versão 1.4.4
+**Docker Hub (5):**
+- nginx, postgres, redis, ubuntu, alpine
 
-## com.discordapp.Discord - 1.0.168
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/com.discordapp.Discord
-- Notas: Atualização do com.discordapp.Discord para versão 1.0.168
-
-## com.slack.Slack - 4.53.280
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/com.slack.Slack
-- Notas: Atualização do com.slack.Slack para versão 4.53.280
-
-## org.telegram.desktop - 7.4
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/org.telegram.desktop
-- Notas: Atualização do org.telegram.desktop para versão 7.4
-
-## net.lutris.Lutris - 0.5.23
-- Fonte: flathub
-- Anterior: novo
-- Link: https://flathub.org/apps/net.lutris.Lutris
-- Notas: Atualização do net.lutris.Lutris para versão 0.5.23
+**AUR (2):**
+- yay, google-chrome

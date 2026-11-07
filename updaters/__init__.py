@@ -1,12 +1,21 @@
 from .generic import BaseUpdater, UpdateInfo
 from .flathub import FlatpakUpdater
 from .github_releases import GitHubReleaseUpdater
+from .pypi import PyPIUpdater
+from .npm import NPMUpdater
+from .dockerhub import DockerHubUpdater
+from .arch import AURUpdater
 
-__all__ = ["BaseUpdater", "UpdateInfo", "FlatpakUpdater", "GitHubReleaseUpdater"]
+__all__ = ["BaseUpdater", "UpdateInfo", "FlatpakUpdater", "GitHubReleaseUpdater",
+           "PyPIUpdater", "NPMUpdater", "DockerHubUpdater", "AURUpdater"]
 
 UPDATER_MAP = {
     "flathub": FlatpakUpdater,
     "github_release": GitHubReleaseUpdater,
+    "pypi": PyPIUpdater,
+    "npm": NPMUpdater,
+    "dockerhub": DockerHubUpdater,
+    "arch": AURUpdater,
 }
 
 def get_updater(repo_config: dict) -> BaseUpdater:
